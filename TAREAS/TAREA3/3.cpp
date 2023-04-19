@@ -1,5 +1,4 @@
 //Mayor factor primo
-#include <iostream>
 
 #include <iostream>
 
