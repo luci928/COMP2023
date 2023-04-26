@@ -7,8 +7,10 @@ bool esPalIter(const int arr[],const int tam[]{
    while(ini<fin){
       if(arr[ini] != arr[fin]){
          return true;
-
-}
-
+         ini++;
+         fin--;} 
+      return true;
+      
+      
 
 }
