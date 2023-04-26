@@ -4,7 +4,7 @@ using namespace std;
 
 
     void insert(int arr[],int tam){
-        for(int i=0;i<tam;i++){
+        for(int i=1;i<tam;i++){
             int al=i;
             int camb =arr[i];
 
