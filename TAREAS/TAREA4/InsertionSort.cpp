@@ -1,4 +1,4 @@
-//elemento de la izquierda es menor q el actual 
+
 #include <iostream>
 using namespace std;
 
