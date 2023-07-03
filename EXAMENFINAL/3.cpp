@@ -29,7 +29,7 @@ class Triangle:public Polygon{
 c)
 class Polygon{
     int width ;
-    int height;
+    int size;
     int height;
     int polygon *data;
 
