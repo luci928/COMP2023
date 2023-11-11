@@ -137,12 +137,12 @@ int main(){
   B.add(7);
 
   A.print();
-  cout << "----------------------------------" << endl;
+  cout <<endl;
   B.print();
-  cout << "----------------------------------" << endl;
+  cout << endl;
   merge(A, B);
-  cout << "merge----------------------------------" << endl;
+  cout << "MERGE" << endl;
   A.print();
-  cout << "----------------------------------" << endl;
+  cout << endl;
   B.print();
 }
