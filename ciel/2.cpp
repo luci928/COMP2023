@@ -76,79 +76,14 @@ cola <T>::~cola () {
     tail = NULL;
 }
 
-
-#include <iostream>
-#include <cstdlib> // Para system("cls")
-
-using namespace std;
-
 int main() {
+    int x;
     cola<int> PL;
-
-    for (;;) {
-        char o(' ');
-        int x{ 0 };
-        system("cls");
-        cout << "ELEGIR OPCION:" << endl;
-        cout << "a. Ingresar valor (Push)" << endl;
-        cout << "b. Eliminar valor (Pop)" << endl;
-        cout << "c. Pila vacía (Empty)" << endl;
-        cout << "d. Mostrar pila (Print)" << endl;
-        cout << "e. Destruir pila (Destructor)" << endl;
-        cout << "f. Salir (return 0)" << endl << endl;
-        cout << "ELEGIR UNA OPCION";
-        cin >> o;
-        system("cls");
-
-        switch (o) {
-        case 'a':
-            cout << "Ingrese el valor que quiera ingresar: " << endl;
-            cin >> x;
-            PL.push(x);
-            cout << "Listo " << endl;
-            system("pause");
-            break;
-
-        case 'b':
-            if (PL.pop(x)) {
-                cout << "El valor es:" << x << endl;
-            }
-            else {
-                cout << "La pila está vacía!" << endl;
-            }
-            system("pause");
-            break;
-
-        case 'c':
-            if (PL.empty()) {
-                cout << "Hay elementos en la pila" << endl;
-            }
-            else {
-                cout << "Pila vacía" << endl;
-            }
-            system("pause");
-            break;
-
-        case 'd':
-            PL.print();
-            system("pause");
-            break;
-
-        case 'e':
-            PL.~cola();
-            cout << "Pila vaciada" << endl;
-            cout << endl;
-            system("pause");
-            break;
-
-        case 'f':
-            return 0;
-
-        default:
-            cout << "Elegir solo las opciones proporcionadas " << endl;
-            cout << endl;
-            system("pause");
-            break;
-        }
-    }
+    PL.push(5);
+    PL.print();
+    PL.push(3);
+    PL.print();
+    PL.pop(x);
+    PL.print();
+    cout<<x<<endl;
 }
