@@ -188,7 +188,7 @@ void lista_circular<T, funtor>::Josephus(int valor) {
         nodo<T>* eliminar = current;
         current = current->next;
 
-        cout << "Eliminado: " << eliminar->valor << endl;
+        cout << "delete: " << eliminar->valor << endl;
         delete eliminar;
     }
 
